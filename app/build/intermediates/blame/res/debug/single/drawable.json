@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable/timepicker_down_btn.xml",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable/timepicker_down_btn.xml"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable/timepicker_up_btn.xml",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable/timepicker_up_btn.xml"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable/timepicker_input.xml",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable/timepicker_input.xml"
+    }
+]

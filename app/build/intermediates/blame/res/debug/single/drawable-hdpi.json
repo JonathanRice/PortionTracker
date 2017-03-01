@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable-hdpi/timepicker_input_pressed.9.png",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable-hdpi/timepicker_input_pressed.9.png"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable-hdpi/timepicker_up_pressed.9.png",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable-hdpi/timepicker_up_pressed.9.png"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable-hdpi/timepicker_down_normal.9.png",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable-hdpi/timepicker_down_normal.9.png"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable-hdpi/timepicker_input_selected.9.png",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable-hdpi/timepicker_input_selected.9.png"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable-hdpi/timepicker_up_selected.9.png",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable-hdpi/timepicker_up_selected.9.png"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable-hdpi/timepicker_up_normal.9.png",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable-hdpi/timepicker_up_normal.9.png"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable-hdpi/icon.png",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable-hdpi/timepicker_up_disabled.9.png",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable-hdpi/timepicker_up_disabled.9.png"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable-hdpi/timepicker_input_normal.9.png",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable-hdpi/timepicker_input_normal.9.png"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable-hdpi/timepicker_input_disabled.9.png",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable-hdpi/timepicker_input_disabled.9.png"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable-hdpi/timepicker_down_disabled.9.png",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable-hdpi/timepicker_down_disabled.9.png"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable-hdpi/timepicker_up_disabled_focused.9.png",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable-hdpi/timepicker_up_disabled_focused.9.png"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable-hdpi/timepicker_down_pressed.9.png",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable-hdpi/timepicker_down_pressed.9.png"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable-hdpi/timepicker_down_disabled_focused.9.png",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable-hdpi/timepicker_down_disabled_focused.9.png"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/drawable-hdpi/timepicker_down_selected.9.png",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/drawable-hdpi/timepicker_down_selected.9.png"
+    }
+]

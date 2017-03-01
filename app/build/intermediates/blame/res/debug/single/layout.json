@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/layout/number_picker_pref.xml",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/layout/number_picker_pref.xml"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/layout/number_picker.xml",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/layout/number_picker.xml"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/layout/graph.xml",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/layout/graph.xml"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/layout/number_picker_main.xml",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/layout/number_picker_main.xml"
+    }
+]

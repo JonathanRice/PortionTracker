@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/color/yellowbutton.xml",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/color/yellowbutton.xml"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/color/redbutton.xml",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/color/redbutton.xml"
+    },
+    {
+        "merged": "/home/jonathan/StudioProjects/PortionTracker/app/build/intermediates/res/merged/debug/color/greenbutton.xml",
+        "source": "/home/jonathan/StudioProjects/PortionTracker/app/src/main/res/color/greenbutton.xml"
+    }
+]
