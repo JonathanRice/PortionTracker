@@ -71,7 +71,6 @@ public class GraphPortion extends OrmLiteBaseActivity<DatabaseHelper> {
 		length = renderer.getSeriesRendererCount();
 		for (int i = 0; i < length; i++) {
 			SimpleSeriesRenderer seriesRenderer = renderer.getSeriesRendererAt(i);
-			seriesRenderer.setDisplayChartValues(true);
 		}
 		XYMultipleSeriesDataset dataSet = new XYMultipleSeriesDataset();
 		XYSeries series = new XYSeries("Foo");
