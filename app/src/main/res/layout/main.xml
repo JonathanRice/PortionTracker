@@ -4,8 +4,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-<Button android:text="Button" android:id="@+id/DateButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:onClick="dateButtonClick" android:hapticFeedbackEnabled="true"></Button>
-<Button android:text="Weight" android:id="@+id/WeightButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:onClick="weightButtonClick" android:hapticFeedbackEnabled="true"></Button>    
+<Button android:text="@string/button" android:id="@+id/DateButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:onClick="dateButtonClick" android:hapticFeedbackEnabled="true"/>
+<Button android:text="@string/weight" android:id="@+id/WeightButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:onClick="weightButtonClick" android:hapticFeedbackEnabled="true"/>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/scroller"
     android:layout_width="fill_parent"
@@ -14,53 +14,53 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="wrap_content"
     >
-<TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
-		<RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
-			<TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
-    			<TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:layout_width="wrap_content">
-        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Water" android:autoText="false" android:text="@string/water" android:minEms="15"></TextView>
-        			<Button android:layout_height="wrap_content" android:id="@+id/WaterLess" android:layout_width="60dip" android:text="@string/less" android:onClick="portionLess" android:hapticFeedbackEnabled="true"></Button>
-        			<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/WaterPortions" android:text="@string/zero" android:gravity="center" android:minEms="3"></TextView>
-        			<Button android:layout_height="wrap_content" android:id="@+id/WaterMore" android:layout_width="60dip" android:text="@string/more" android:onClick="portionMore"></Button>
+<TableLayout android:id="@+id/mainLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TableRow android:id="@+id/waterRow" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
+		<RelativeLayout android:id="@+id/waterLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TableLayout android:id="@+id/waterTableLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    			<TableRow android:id="@+id/waterTableRow" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Water" android:text="@string/water" android:minEms="15"/>
+        			<Button android:layout_height="wrap_content" android:id="@+id/WaterLess" android:layout_width="60dip" android:text="@string/less" android:onClick="portionLess" android:hapticFeedbackEnabled="true"/>
+        			<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/WaterPortions" android:text="@string/zero" android:gravity="center" android:minEms="3"/>
+        			<Button android:layout_height="wrap_content" android:id="@+id/WaterMore" android:layout_width="60dip" android:text="@string/more" android:onClick="portionMore"/>
 				</TableRow>
 			</TableLayout>
-        	<Button android:layout_height="wrap_content" android:text="@string/zero" android:id="@+id/WaterGoal" android:layout_width="60dip" android:layout_alignParentRight="true" android:background="@color/greenbutton" android:onClick="goalClick" android:tag="fds"></Button>
+        	<Button android:layout_height="wrap_content" android:text="@string/zero" android:id="@+id/WaterGoal" android:layout_width="60dip" android:layout_alignParentRight="true" android:background="@color/greenbutton" android:onClick="goalClick" android:tag="fds"/>
 		</RelativeLayout>        
     </TableRow>
-    <TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
-		<RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
-			<TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
-    			<TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:layout_width="wrap_content">
-        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Protein" android:autoText="false" android:text="@string/protein" android:minEms="15"></TextView>
-        			<Button android:layout_height="wrap_content" android:id="@+id/ProteinLess" android:layout_width="60dip" android:text="@string/less" android:onClick="portionLess" android:hapticFeedbackEnabled="true"></Button>
-        			<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ProteinPortions" android:text="@string/zero" android:gravity="center" android:minEms="3"></TextView>
-        			<Button android:layout_height="wrap_content" android:id="@+id/ProteinMore" android:layout_width="60dip" android:text="@string/more" android:onClick="portionMore"></Button>
+    <TableRow android:id="@+id/proteinRow" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
+		<RelativeLayout android:id="@+id/proteinLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TableLayout android:id="@+id/proteinTableLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    			<TableRow android:id="@+id/proteinTableRow" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Protein" android:text="@string/protein" android:minEms="15"/>
+        			<Button android:layout_height="wrap_content" android:id="@+id/ProteinLess" android:layout_width="60dip" android:text="@string/less" android:onClick="portionLess" android:hapticFeedbackEnabled="true"/>
+        			<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ProteinPortions" android:text="@string/zero" android:gravity="center" android:minEms="3"/>
+        			<Button android:layout_height="wrap_content" android:id="@+id/ProteinMore" android:layout_width="60dip" android:text="@string/more" android:onClick="portionMore"/>
 				</TableRow>
 			</TableLayout>
-        	<Button android:layout_height="wrap_content" android:text="@string/zero" android:id="@+id/ProteinGoal" android:layout_width="60dip" android:layout_alignParentRight="true" android:background="@color/greenbutton"  android:onClick="goalClick"></Button>
+        	<Button android:layout_height="wrap_content" android:text="@string/zero" android:id="@+id/ProteinGoal" android:layout_width="60dip" android:layout_alignParentRight="true" android:background="@color/greenbutton"  android:onClick="goalClick"/>
 		</RelativeLayout>        
     </TableRow>    
-    <TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
-		<RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
-			<TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
-    			<TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:layout_width="wrap_content">
-        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Dairy" android:autoText="false" android:text="@string/dairy" android:minEms="15"></TextView>
-        			<Button android:layout_height="wrap_content" android:id="@+id/DairyLess" android:layout_width="60dip" android:text="@string/less" android:onClick="portionLess" android:hapticFeedbackEnabled="true"></Button>
-        			<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/DairyPortions" android:text="@string/zero" android:gravity="center" android:minEms="3"></TextView>
-        			<Button android:layout_height="wrap_content" android:id="@+id/DairyMore" android:layout_width="60dip" android:text="@string/more" android:onClick="portionMore"></Button>
+    <TableRow android:id="@+id/dairyRow" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
+		<RelativeLayout android:id="@+id/dairyLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TableLayout android:id="@+id/dairyTableLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    			<TableRow android:id="@+id/dairyTableRow" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Dairy" android:text="@string/dairy" android:minEms="15"/>
+        			<Button android:layout_height="wrap_content" android:id="@+id/DairyLess" android:layout_width="60dip" android:text="@string/less" android:onClick="portionLess" android:hapticFeedbackEnabled="true"/>
+        			<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/DairyPortions" android:text="@string/zero" android:gravity="center" android:minEms="3"/>
+        			<Button android:layout_height="wrap_content" android:id="@+id/DairyMore" android:layout_width="60dip" android:text="@string/more" android:onClick="portionMore"/>
 				</TableRow>
 			</TableLayout>
         	<Button android:layout_height="wrap_content" android:text="@string/zero" android:id="@+id/DairyGoal" android:layout_width="60dip" android:layout_alignParentRight="true" android:background="@color/greenbutton"  android:onClick="goalClick"></Button>
 		</RelativeLayout>        
     </TableRow>
-    <TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
-		<RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
-			<TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
-    			<TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:layout_width="wrap_content">
-        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Fruit" android:autoText="false" android:text="@string/fruit" android:minEms="15"></TextView>
+    <TableRow android:id="@+id/fruitRow" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
+		<RelativeLayout android:id="@+id/fruitLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TableLayout android:id="@+id/fruitTableLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    			<TableRow android:id="@+id/fruitTableRow" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Fruit" android:text="@string/fruit" android:minEms="15"></TextView>
         			<Button android:layout_height="wrap_content" android:id="@+id/FruitLess" android:layout_width="60dip" android:text="@string/less" android:onClick="portionLess" android:hapticFeedbackEnabled="true"></Button>
         			<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/FruitPortions" android:text="@string/zero" android:gravity="center" android:minEms="3"></TextView>
         			<Button android:layout_height="wrap_content" android:id="@+id/FruitMore" android:layout_width="60dip" android:text="@string/more" android:onClick="portionMore"></Button>
@@ -69,11 +69,11 @@
         	<Button android:layout_height="wrap_content" android:text="@string/zero" android:id="@+id/FruitGoal" android:layout_width="60dip" android:layout_alignParentRight="true" android:background="@color/greenbutton"  android:onClick="goalClick"></Button>
 		</RelativeLayout>        
     </TableRow>
-    <TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
-		<RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
-			<TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
-    			<TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:layout_width="wrap_content">
-        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Vegetable" android:autoText="false" android:text="@string/vegetable" android:minEms="15"></TextView>
+    <TableRow android:id="@+id/vegetableRow" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
+		<RelativeLayout android:id="@+id/vegetableLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TableLayout android:id="@+id/vegetableTableLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    			<TableRow android:id="@+id/vegetableTableRow" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Vegetable" android:text="@string/vegetable" android:minEms="15"></TextView>
         			<Button android:layout_height="wrap_content" android:id="@+id/VegetableLess" android:layout_width="60dip" android:text="@string/less" android:onClick="portionLess" android:hapticFeedbackEnabled="true"></Button>
         			<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/VegetablePortions" android:text="@string/zero" android:gravity="center" android:minEms="3"></TextView>
         			<Button android:layout_height="wrap_content" android:id="@+id/VegetableMore" android:layout_width="60dip" android:text="@string/more" android:onClick="portionMore"></Button>
@@ -82,11 +82,11 @@
         	<Button android:layout_height="wrap_content" android:text="@string/zero" android:id="@+id/VegetableGoal" android:layout_width="60dip" android:layout_alignParentRight="true" android:background="@color/greenbutton"  android:onClick="goalClick"></Button>
 		</RelativeLayout>        
     </TableRow>    
-    <TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
-		<RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
-			<TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
-    			<TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:layout_width="wrap_content">
-        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Fat" android:autoText="false" android:text="@string/fat" android:minEms="15"></TextView>
+    <TableRow android:id="@+id/fatRow" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
+		<RelativeLayout android:id="@+id/fatLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TableLayout android:id="@+id/fatTableLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    			<TableRow android:id="@+id/fatTableRow" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Fat" android:text="@string/fat" android:minEms="15"></TextView>
         			<Button android:layout_height="wrap_content" android:id="@+id/FatLess" android:layout_width="60dip" android:text="@string/less" android:onClick="portionLess" android:hapticFeedbackEnabled="true"></Button>
         			<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/FatPortions" android:text="@string/zero" android:gravity="center" android:minEms="3"></TextView>
         			<Button android:layout_height="wrap_content" android:id="@+id/FatMore" android:layout_width="60dip" android:text="@string/more" android:onClick="portionMore"></Button>
@@ -95,11 +95,11 @@
         	<Button android:layout_height="wrap_content" android:text="@string/zero" android:id="@+id/FatGoal" android:layout_width="60dip" android:layout_alignParentRight="true" android:background="@color/greenbutton" android:onClick="goalClick"></Button>
 		</RelativeLayout>        
     </TableRow>
-    <TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
-		<RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
-			<TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
-    			<TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:layout_width="wrap_content">
-        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Carb" android:autoText="false" android:text="@string/carb" android:minEms="15"></TextView>
+    <TableRow android:id="@+id/carbRow" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
+		<RelativeLayout android:id="@+id/carbLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TableLayout android:id="@+id/carbTableLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    			<TableRow android:id="@+id/carbTableRow" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Carb" android:text="@string/carb" android:minEms="15"></TextView>
         			<Button android:layout_height="wrap_content" android:id="@+id/CarbLess" android:layout_width="60dip" android:text="@string/less" android:onClick="portionLess" android:hapticFeedbackEnabled="true"></Button>
         			<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/CarbPortions" android:text="@string/zero" android:gravity="center" android:minEms="3"></TextView>
         			<Button android:layout_height="wrap_content" android:id="@+id/CarbMore" android:layout_width="60dip" android:text="@string/more" android:onClick="portionMore"></Button>
@@ -108,11 +108,11 @@
         	<Button android:layout_height="wrap_content" android:text="@string/zero" android:id="@+id/CarbGoal" android:layout_width="60dip" android:layout_alignParentRight="true" android:background="@color/greenbutton" android:onClick="goalClick"></Button>
 		</RelativeLayout>        
     </TableRow>    
-    <TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
-		<RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
-			<TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
-    			<TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:layout_width="wrap_content">
-        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Snack" android:autoText="false" android:text="@string/snack" android:minEms="15"></TextView>
+    <TableRow android:id="@+id/snackRow" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
+		<RelativeLayout android:id="@+id/snackLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TableLayout android:id="@+id/snackTableLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    			<TableRow android:id="@+id/snackTableRow" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Snack" android:text="@string/snack" android:minEms="15"></TextView>
         			<Button android:layout_height="wrap_content" android:id="@+id/SnackLess" android:layout_width="60dip" android:text="@string/less" android:onClick="portionLess" android:hapticFeedbackEnabled="true"></Button>
         			<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/SnackPortions" android:text="@string/zero" android:gravity="center" android:minEms="3"></TextView>
         			<Button android:layout_height="wrap_content" android:id="@+id/SnackMore" android:layout_width="60dip" android:text="@string/more" android:onClick="portionMore"></Button>
@@ -121,11 +121,11 @@
         	<Button android:layout_height="wrap_content" android:text="@string/zero" android:id="@+id/SnackGoal" android:layout_width="60dip" android:layout_alignParentRight="true" android:background="@color/greenbutton"  android:onClick="goalClick"></Button>
 		</RelativeLayout>        
     </TableRow>
-    <TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
-		<RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
-			<TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
-    			<TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:layout_width="wrap_content">
-        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Condiment" android:autoText="false" android:text="@string/condiment" android:minEms="15"></TextView>
+    <TableRow android:id="@+id/condimentsRow" android:layout_height="wrap_content" android:paddingBottom="10dip" android:paddingTop="10dip" android:layout_width="wrap_content">
+		<RelativeLayout android:id="@+id/condimentsLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TableLayout android:id="@+id/condimentsTableLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    			<TableRow android:id="@+id/condimentsTableRow" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        			<TextView android:layout_height="wrap_content" android:layout_width="80dip" android:id="@+id/Condiment" android:text="@string/condiment" android:minEms="15"></TextView>
         			<Button android:layout_height="wrap_content" android:id="@+id/CondimentLess" android:layout_width="60dip" android:text="@string/less" android:onClick="portionLess" android:hapticFeedbackEnabled="true"></Button>
         			<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/CondimentPortions" android:text="@string/zero" android:gravity="center" android:minEms="3"></TextView>
         			<Button android:layout_height="wrap_content" android:id="@+id/CondimentMore" android:layout_width="60dip" android:text="@string/more" android:onClick="portionMore"></Button>
